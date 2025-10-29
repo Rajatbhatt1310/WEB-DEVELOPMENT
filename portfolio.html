@@ -2,90 +2,123 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="portfolio.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body{
-            background-color: bisque;
-        }
-    </style>
+    <title>PORTFOLIO</title>
 </head>
 
 <body>
 
-    <h1>Rajat Bhatt</h1>
-    <ul>
-        <li><a href="https://www.youtube.com/" target="_blank">About</a></li>
+    <header>
+        <h1>PORTFOLIO</h1>
 
-        <li><a href="https://www.youtube.com/"target="_blank">Projects</a></li>
-
-        <li><a href="https://wcdhry.gov.in/child-help-line-chl/#:~:text=Child%20Helpline%20number%201098%20is,restoration%20or%20social%20re%2D%20integration."target="_blank">Contact</a></li>
-    </ul>
-    <h2>Welcome to my Portfolio</h2>
-    <p>Hello I am a web WEB-DEVELOPMENT student. this is my portfolio</p>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>About me</li>
+                    <li>Contacts</li>
+                    <li>Skills</li>
+                    <li>My projects</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
 
     <h2>About me</h2>
-    
-    <img width="250px" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYc8m7Lgr3x5f6J8yoNIOQvCp5eF5SgY6yvgIcGkYAazevuwNhvptKXM5fYjdRxVOTaHzc0w-T32wzja3O0t_2QOL5boTIUunlKPEJ3hjR3g" alt="">
-    
-    <p>I am excited and passionate for gaining the knowledge of web WEB-DEVELOPMENT and other things as well.</p>
 
-    <h2>My projects</h2>
+    <div class="image">
+        <img src="https://www.springboard.com/blog/wp-content/uploads/2023/09/what-exactly-does-a-programmer-do.jpeg"
+            alt="">
+    </div>
 
-    <ul>
-        <li>Link of my fav. website</li>
-        <li>My short biodata</li>
-        <li>Forms</li>
-        <li>And many more</li>
-    </ul>
+    <hr>
+    <div class="tab">
+        <table border="4">
+            <tr>
+                <th>Skills</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermidiate</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Matered</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Matered</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
 
-    <h2>Technical Skills</h2>
-    <table border ="1">
-    <tr>
-        <th>Skills</th>
-        <th>Level</th>
-    </tr>
-    <tr>
-        <td>Python</td>
-        <td>Intermidiate</td>
-    </tr>
-    <tr>
-        <td>CSS</td>
-        <td>Intermidiate</td>
-    </tr>
-    <tr>
-        <td>HTML</td>
-        <td>Master</td>
-    </tr>
-</table>
-<h2>FORMS</h2>
- <p>Fill up the form</p>
-    <form action="/submit" method="post"><div>
-        <input type="text" name="Name" id="Name" placeholder="Enter your full name ">
-        <label for="Name"></label>
+
+    <h2>
+        MY PROJECTS
+    </h2>
+    <img width="150" height="100px"
+        src="https://www.livemint.com/lm-img/img/2024/08/26/600x338/christopher-gower-m_HRfLhgABo-unsplash_1724660492647_1724660500830.jpg">
+    <h3>MY PROJECT 1</h3>
+    <br>
+    <br>
+    <img width="150px" height="100px"
+        src="https://infovistar.in/wp-content/uploads/2024/10/Best-Laptops-for-Coding-and-Programming-in-2025.jpg">
+    <h3>My project 2</h3>
+
+    <hr>
+
+    <div class="contact">
+        <h3>CONTACT ME</h3>
+        <form method="post">
+            <table border="4">
+                <tr>
+                    <td>
+                        <label for="Name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Name" id="Name" placeholder="#Enter you name here#">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="City">City :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="City" id="City" placeholder="#Enter you City here#">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email :</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="#Enter you Email id here#">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-primary">SUBMIT</button>
+                    </td>
+                </tr>
+            </table>
+
+
     </div>
-    <div>
-        <input type="text" name="City" id="City" placeholder="Enter your city name">
-        <label for="City"></label>
+
+
+
     </div>
-    <div>
-        <input type="email" name="EMAIL ID" id="email" placeholder="Enter your email-id">
-        <label for="email"></label>
-    </div>
-    <div>
-        <input type="password" name="password " id="Password" placeholder="Enter your password">
-        <label for="password"></label>
-    </div>
-    <div>
-        <input type="text" name="Pincode" id="Pincode" placeholder="Enter the city Pincode">
-        <label for="Pincode"></label>
-    </div>
-    <div> ...........</div>
-    <div>
-        <input type="submit" value="Next">
-    </div>
-    </form>
+    <footer>
+
+        <button>Scroll Up</button>
+
+    </footer>
+
 </body>
 
 </html>

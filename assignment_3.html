@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #d3d3d3;
+        }
+
+        header {
+            background: #194eb9;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .top {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #aac6ff;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            margin: 40px 60px 0 60px;
+            gap: 60px;
+        }
+
+        .intro-text h1 {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .intro-text h2 {
+            margin: 0 0 10px 0;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #27d022;
+        }
+
+        .intro-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .intro-text .mern {
+            color: #194eb9;
+            font-weight: bold;
+        }
+
+        .Image_pfp img {
+            display: flex;
+            justify-content: right;
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            background: #cfe2fa;
+        }
+
+        .about {
+            margin: 40px 60px;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #232323;
+        }
+
+        .scroll {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #194eb9;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(25, 78, 185, 0.1);
+            outline: none;
+        }
+
+        .scroll:hover {
+            background: #2564d6;
+        }
+
+        .skills {
+            margin: 40px 60px;
+        }
+
+        ;.skills h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        .skill-card {
+            background: #194eb9;
+            color: #fff;
+            border-radius: 30px;
+            width: 350px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.14);
+            font-family: 'Georgia', serif;
+            position: relative;
+            font-size: 2.1rem;
+        }
+
+        .skill-card .skill-name {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .skill-card .skill-level {
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            left: 50%;
+            bottom: 18px;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+       .skill-card:hover{
+        background-color: aqua;
+        color:purple;
+
+        transform: translate(-4px);
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">My Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Hi, I am</h1>
+                <h2>Full Stack Web Developer</h2>
+                <p>Building mordern web application with <span class="mern">MERN</span> stack.</p>
+            </div>
+            <div class="Image_pfp">
+                <!-- Use your actual image path here -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf1fiSQO7JfDw0uv1Ae_Ye-Bo9nhGNg27dwg&s"
+                    alt="profile-image">
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam ipsum earum sint! Optio deleniti
+                beatae ipsa, praesentium quam veniam minima labore eligendi error architecto laudantium distinctio
+                explicabo, suscipit asperiores.</p>
+        </section>
+    </main>
+    <button class="scroll" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-name">Javascript</span>
+                <span class="skill-level">Learning</span>
+            </div>
+        </div>
+
+    </section>
+
+<div class="project">
+     <h2>
+        MY PROJECTS
+    </h2>
+    <img width="150" height="100px"
+        src="https://www.livemint.com/lm-img/img/2024/08/26/600x338/christopher-gower-m_HRfLhgABo-unsplash_1724660492647_1724660500830.jpg">
+    <h3>MY PROJECT 1</h3>
+    <br>
+    <br>
+    <img width="150px" height="100px"
+        src="https://infovistar.in/wp-content/uploads/2024/10/Best-Laptops-for-Coding-and-Programming-in-2025.jpg">
+    <h3>My project 2</h3>
+
+</div>
+
+
+    <div class="contact">
+        <h2>CONTACT ME</h2>
+        <form method="post">
+            <table border="4">
+                <tr>
+                    <td>
+                        <label for="Name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Name" id="Name" placeholder="#Enter you name here#">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="City">City :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="City" id="City" placeholder="#Enter you City here#">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email :</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="#Enter you Email id here#">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-primary">SUBMIT</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+
+<footer>
+    <!-- add copyright -->
+</footer>
+
+</body>
+
+</html>
